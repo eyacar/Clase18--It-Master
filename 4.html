@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="Estilos()">
+    <div id="a"></div>
+    <script>
+    const estilos = {"backgroundColor":"blue", "width": "450px","height":"700px"}
+    function Estilos (){
+    const estilo = document.getElementById("a")
+    estilo.style.backgroundColor = `${estilos.backgroundColor}`
+    estilo.style.width = `${estilos.width}`
+    estilo.style.height = `${estilos.height}`
+    }
+    </script>
+</body>
+</html>

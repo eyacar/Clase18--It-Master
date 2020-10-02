@@ -1,0 +1,18 @@
+<script>
+    const productos = [
+        {"producto":"webcam","precio":25000},
+        {"producto":"TV 4k","precio":55000},
+        {"producto":"Auto","precio":1000000},
+        {"producto":"Control remoto","precio":50},
+        {"producto":"Cava","precio":30000}
+    ]
+var Total = 0
+if (productos.length == 5){
+console.log("Cantidad de prodcutos: "+productos.length)
+for (let producto of productos){
+Total += parseInt(producto.precio)
+}
+console.log(`Valor total de los productos: $${Total}`)
+}
+else {alert(`Hay mas de 5 productos`)}
+</script>

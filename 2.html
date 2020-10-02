@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="imagen()">
+<header></header>
+<img src="" alt="">
+<script>
+const datos = {"albumId": 1,"id": 1,"title": "accusamus beatae ad facilis cum similique qui sunt","url": "https://via.placeholder.com/600/92c952"}
+const img = document.querySelector("img")
+function imagen (){
+img.setAttribute("src",datos.url) 
+document.querySelector("header").innerHTML = `<h1>${datos.title}<h1/>`
+}
+
+</script>
+</body>
+</html>

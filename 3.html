@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div>
+<input type="button" value="Con For" onclick="Lista()">
+<h1>Con For Of</h1>    
+<ul id="for"></ul>
+</div>
+<br>
+<div>
+<input type="button" value="Con Map" onclick="listilla()">
+<h1>Con Map</h1>    
+<ul id="map"></ul>
+</div>
+<script>
+const peliculas = [
+    { pelicula: "Inception", director: "Christopher Nolan", actor: "Leonardo DiCaprio" },            { pelicula: "500 Days of Summer", director: "Marc Webb", actor: "Joseph Gordon-Levitt" },
+    { pelicula: "Dark Shadows", director: "Tim Burton", actor: "Johnny Depp" },
+    { pelicula: "Volver al Futuro", director: "Robert Zemeckis", actor: "Michael Fox"}			
+    ];
+const a =[]
+const b = []
+function Lista(){
+if (a.length > 0){}
+else {
+    for (pelicula of peliculas){
+    const lista = document.getElementById("for");
+    lista.insertAdjacentHTML(`afterend`, `<li>${pelicula.pelicula}</li>`);
+    a.push("1")
+    console.log(a)
+    }
+}
+}
+function listilla (){
+const mapa = document.getElementById("map")
+if (b.length > 0){}
+else {
+    map = peliculas.map((peli) => mapa.insertAdjacentHTML(`beforebegin`,`<li> ${peli.pelicula} </li>`))
+    b.push("1")
+}
+}
+</script>
+</body>
+</html>
